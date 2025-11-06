@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="" href="" title="" type="" />
+</head>
+
+<body>
+  <header id="main_header">
+    <h1>Book House</h1>
+    
+    <div id="bottom_div">
+      <button type="submit" id="authors" onclick="multiSecFun('home')">Home</button>
+      <button type="submit" id="note"    onclick="multiSecFun('note')">Note</button>
+      <button type="submit" id="reading" onclick="multiSecFun('reading')">Reading</button>
+      <button type="submit" id="collection" onclick="multiSecFun('collection')">Collection</button>
+    </div>
+  </header>
+  
+  <section id="ssf">
+    
+    <div id="ssf_btn">
+      <button type="submit" id="filter">filter</button>
+      
+      <input type="text" placeholder="Search Book..." id="search_field">
+      
+      <button type="submit" id="sort">sort</button>
+    </div>
+    
+    <div id="sf_cards">
+      
+      <div id="filter_cards">
+        <button type="submit" id="removeFilter"> Remove Filter</button>
+        <select  id="filter_select">
+          
+          <option value="Biography / Autobiography">Biography / Autobiography</option>
+          <option value="Business & Economics">Business & Economics</option>
+          <option value="Children’s Literature">Children’s Literature</option>
+          <option value="Comics & Graphic Novels">Comics & Graphic Novels</option>
+          <option value="Educational">Educational</option>
+          <option value="historical" >Historical</option>
+          <option value="Ideologies" >Ideologies</option>
+          <option value="Literature">Literature </option>
+          <option value="Money management">Money management</option>
+          <option value="Mystery & Thriller">Mystery & Thriller</option>
+          <option value="Philosophy">Philosophy</option>
+          <option value="programming">Programming</option>
+          <option value="Psychology">Psychology</option>
+          <option value="Politics & geopolitics">Politics </option>
+          <option value="Poetry">Poetry</option>
+          <option value="productivity">Productivity</option>
+          <option value="Religious Books">Religious Books</option>
+          <option value="Science">Science</option>
+          <option value="Science Fiction">Science Fiction</option>
+          <option value="Self-Development / Personal Growth">Self-Development / Personal Growth</option>
+          <option value="Short Stories">Short Stories</option>
+          <option value="Social,cultural & Contemporary">Social,cultural & Contemporary</option>
+          <option value="Travelogue">Travelogue</option>
+          <option value="Technology">Technology</option>
+          
+        </select>
+
+      </div>
+      
+      <div id="sort_cards">
+        <button type="submit" id="a_to_z" onclick="sortFunction('aToz')">A to Z</button>
+        <button type="submit" id="z_to_a" onclick="sortFunction('zToa')">Z to A</button>
+      </div>
+      
+      
+    </div>
+    
+  </section>
+  
+  <section id="main_section">
+    <table border="1" id="books_table" cellspacing = "0">
+
+    </table >
+  </section>
+  
+  <section id="reading_options">
+    <button type="submit" onclick="progressTracker('not start')">Not Started</button>
+    <button type="submit" onclick="progressTracker('running')">In Progress</button>
+    <button type="submit" onclick="progressTracker('complete')">Completed</button>
+  </section>
+  
+  <section id="collection_options">
+    <div class="optionOne">
+      <p>Collected</p>
+      
+      <div class="optionButtons">
+        <button type="submit" id="yes" onclick="collectionFun('yes')">Yes</button>
+       <button type="submit" id="no" onclick="collectionFun('no')">No</button>
+
+      </div>
+
+    </div>
+    <div class="optionTwo">
+      <p>Collection type</p>
+      <div class="optionButtons">    
+        <button type="submit" id="pdf" onclick="pdfHardcopyFunction('pdf')">PDF</button>
+        <button type="submit" id="hardcopy" onclick="pdfHardcopyFunction('hardcopy')">Hardcopy</button>
+      </div>
+    </div>
+  </section>
+  <!-- Project 
+  
+
+  -->
+  <script src="main.js"></script>
+</body>
+</html>

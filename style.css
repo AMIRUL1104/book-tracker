@@ -1,0 +1,204 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-size: 15px;
+    text-transform: capitalize;
+    background: #0B179729;
+    box-sizing: border-box;
+}
+h1,h2 {
+    background: #0B978E;
+    color: #EAEAEA;
+    text-align: center;
+    padding: 1%;
+}
+#bottom_div{
+    z-index: 4;
+  
+    background: rgba(255, 255, 255, 0.2);  /* হালকা সাদা, transparency */
+    backdrop-filter: blur(10px);           /* পিছনের content blur করবে */
+    -webkit-backdrop-filter: blur(10px);   /* Safari ব্রাউজারের জন্য */
+    
+    border-radius: 0px;       
+    border: 1px solid rgba(255, 255, 255, 0.3);  
+    padding: 10px 0px;         
+    color: white;               
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+
+}
+#ssf_btn{
+    margin: 0px auto 10;
+    z-index: 4;
+  
+    background: rgba(255, 255, 255, 0.2);  /* হালকা সাদা, transparency */
+    backdrop-filter: blur(10px);           /* পিছনের content blur করবে */
+    -webkit-backdrop-filter: blur(10px);   /* Safari ব্রাউজারের জন্য */
+    border-radius: 0px;                    /* বক্সের rounded corner */
+    border: 1px solid rgba(255, 255, 255, 0.3);  /* হালকা হাইলাইট */
+    padding: 10px 0px;                          /* ভিতরের space */
+    color: white;                           /* text color */
+  
+}
+
+
+#search_field{
+    height: 30px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+#sort,#filter,#bottom_div button{
+    padding: 5px;
+    background: seagreen;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+#sf_cards{
+    display: flex;
+    flex-direction: row;
+}
+#sf_cards button,select{
+    display: block;
+    padding: 5px;
+    margin: 5px auto;
+    background: #0B978E;
+    width: 100%;
+    color: #FFFFFF;
+    border: none;
+    
+}
+#filter_cards,#sort_cards{
+    width: 100px;
+    border: 1.5px solid #FFFFFF;
+    background: #FFFFFF;
+    z-index: 5;
+    display: none;
+    position: absolute;
+
+}
+  #sort_cards{
+    margin-left: 240px;
+}
+#filter_cards{
+    margin-left: 20px;
+}
+ 
+
+#main_section{
+    background: #DFDFDF;
+    width: 90%;
+    padding: 3%;
+    margin: 20px auto 0px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+table{
+    width: 100%;
+    
+}
+tr{
+    border: 1px solid #222222;
+}
+td{
+    color: #0C756E;
+    padding: 2px 3px; 
+}
+
+
+#reading_options,#collection_options{
+    background: #DFDFDF;
+    z-index: 4;
+    padding: 2.5%;
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    background: rgba(255, 255, 255, 0.2);  /* হালকা সাদা, transparency */
+    backdrop-filter: blur(10px);           /* পিছনের content blur করবে */
+    -webkit-backdrop-filter: blur(10px);   /* Safari ব্রাউজারের জন্য */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+#reading_options button,#collection_options button{
+    background: transparent;
+    color: #0C756E;
+    padding: 2.5%;
+    margin-left: 20px;
+    border: 1px solid #0C756E;
+    border-radius: 5px;
+}
+#reading_options button:hover,#collection_options button:hover{
+    background: #0C756E;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+.caption{
+    font-size: 18px;
+    font-weight: bold;
+    color: #0C756E;
+}
+.optionOne button,.optionTwo button{
+    background: transparent;
+    color: #0C756E;
+    padding: 2%;
+    border: 1px solid #0C756E;
+    border-radius: 5px;
+    margin: 5px auto;
+    width: 40%;
+    font-size: 13px;
+
+}
+.optionOne,.optionTwo{
+    border: 1px solid #0C756E;
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 80%;
+    margin-bottom: 10px;
+}
+.optionButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.optionTwo {
+    display: none;
+}
+.optionTwo button{
+    font-size: 9px;
+}
+
+#collection_options p{
+    text-align: center;
+    font-size: 15px;
+}
+#collection_options{
+
+   display: grid ;
+   grid-template-rows: auto auto;
+}
+#main_section h4{
+    color: #0C756E;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
