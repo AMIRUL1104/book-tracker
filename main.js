@@ -1121,6 +1121,7 @@ function multiSecFun(option) {
       collection_option.style.display = "none";
       h4.style.display = "none";
       break;
+
     case "collection":
       function collectionShow() {
         collection_option.style.display = "flex";
@@ -1183,3 +1184,5 @@ window.addEventListener("scroll", function () {
     ssf_btn.style.position = "static";
   }
 });
+
+// NOTE SECTION FUNCTION
